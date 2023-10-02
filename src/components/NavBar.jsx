@@ -71,7 +71,7 @@ function NavBar() {
           />
           {menuOpen && (
             <LiaTimesSolid
-              className={`absolute md:hidden top-4 right-4 text-3xl z-30`}
+              className={`absolute md:hidden top-6 right-4 text-3xl z-30`}
               onClick={closeMenu}
             />
           )}
