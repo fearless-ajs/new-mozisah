@@ -9,12 +9,17 @@ import HowItWorks from "./HowItWorks";
 import Pricing from "./Pricing";
 import Testimonial from "./Testimonial";
 import FrequentlyAskedQuestions from "./FrequentlyAskedQuestions";
+import {  useNavigate } from "react-router-dom";
 function Home() {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
   }, []);
+  const navigate = useNavigate();
 
+  const handleSignUp = () => {
+    navigate('/signup');
+  };
   return (
     <>
       <div>
@@ -32,9 +37,17 @@ function Home() {
               efficient outsourcing solutions to elevate your startup's
               potential.
             </p>
-            <button className="mt-8 bg-purple-600 py-2 px-10 rounded-md text-purple-200 mx-auto">
-              Get Started
-            </button>
+            <div className="flex flex-col md:flex-row mt-16 gap-4  md:gap-12">
+              <button onClick={handleSignUp} className="bg-purple-700 text-white rounded-md md:px-8 md:py-2 py-2 hover:bg-purple-100 hover:text-purple-800 hover:font-bold">
+             
+                  For Talents
+                
+              </button>
+
+              <button className="bg-purple-700 text-white rounded-md md:px-8 md:py-2 py-2 hover:bg-purple-100 hover:text-purple-800 hover:font-bold">
+                For Businesses
+              </button>
+            </div>
           </div>
           <div
             data-aos-duration="2000"
@@ -55,9 +68,9 @@ function Home() {
       </div>
       <Hero />
       <HowItWorks />
-        <Pricing />
+      <Pricing />
       <Testimonial />
-      <FrequentlyAskedQuestions/> 
+      <FrequentlyAskedQuestions />
     </>
   );
 }

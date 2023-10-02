@@ -12,11 +12,11 @@ import NavBar from "./components/NavBar";
 import About from "./components/About";
 
 import Testimonial from "./components/Testimonial";
-import HowItWorks from "./components/HowItWorks";
-import Pricing from "./components/Pricing";
+
 import Footer from "./components/Footer";
-import WhyMozisha from "./components/WhyMozisha";
-import FrequentlyAskedQuestions from "./components/FrequentlyAskedQuestions";
+
+import TalentLogin from "./components/TalentLogin";
+import TalentSignUp from "./components/TalentSignUp";
 
 function App() {
   return (
@@ -29,12 +29,12 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/hero" element={<Hero />} />
             <Route path="/testimonials" element={<Testimonial />} />
-          </Route>
-            <Route path="/whyMozisha" element={<WhyMozisha />} />
-          {/* <Route path="*" element={<ErrorPage />} /> */}
-        </Routes>
+            <Route path="/login" element={<TalentLogin/>} />
+            <Route path="/signup" element={<TalentSignUp />} />
 
-      
+          </Route>
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
         <Footer />
       </Router>
     </div>

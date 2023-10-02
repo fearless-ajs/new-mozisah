@@ -1,16 +1,14 @@
 import { NavLink } from "react-router-dom";
 function ErrorPage() {
   return (
-    <div>
       <>
-        <NavLink >
-          <li>Error! Go Back to Home Page!</li>
-        </NavLink>
+        <div className="flex flex-col my-24" >
+        <li className="bg-purple-200 py-24 text-center font-bold text-2xl  list-none"> Error! Go Back to Home Page! ‼️</li>
+        <NavLink to='/home' className='font-bold bg-purple-800 text-white py-4 px-8 rounded-md text-center'>Go Home</NavLink>
+        </div>
       </>
-      <button to="/home">
-        <NavLink to={'home'}>Go Home</NavLink>
-      </button>
-    </div>
+      
+    
   );
 }
 
