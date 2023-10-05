@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+import backgroundImg from '../assets/background.jpg'
 import mainimage2 from "/Users/decagon/mozisha2/mozisha-website/src/assets/portrait-two-creative-colleagues-using-laptop-discuss-work-project-office-ai-generated_773922-2249.jpeg";
 import { useEffect } from "react";
 import Hero from "./Hero";
@@ -26,7 +26,7 @@ function Home() {
         <div
           data-aos-duration="2000"
           data-aos="fade-up"
-          className="flex justify-between items-center gap-16 leading-8  max-w-[1240px] mx-auto flex-col md:flex-row px-4">
+          className="flex justify-between items-center gap-16 leading-8  max-w-[1240px] mx-auto flex-col md:flex-row px-4" >
           <div data-aos-duration="2000" data-aos="fade-up">
             <h1 className="md:text-6xl text-4xl leading-[60px] font-bold md:leading-[80px] flex items-center justify-center  text-gray-700   md:text-start  ">
               Unlocking African Talent for Global Success
