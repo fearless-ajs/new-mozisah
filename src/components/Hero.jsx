@@ -38,8 +38,7 @@ function Hero() {
           <p
             className="text-center text-gray-500 px-4  leading-8"
             data-aos="fade-up">
-            From VC-backed startups to agencies to fast growing D2C brands – all
-            use Mozisha to leverage global remote talent
+            Join other VC backed start-ups and agencies to experience exponential growth.
           </p>
         </div>
         <div
@@ -50,13 +49,13 @@ function Hero() {
             data-aos-duration="2000"
             className="bg-white  shadow-xl p-8 rounded-md w-full">
             <p className="py-2 px-6 bg-purple-300 font-bold rounded-md w-fit">
-              BETTER TALENT
+              PREMIUM TALENT
             </p>
             <p className="text-2xl mt-4" data-aos="fade-up">
               Top 1%
             </p>
             <p className="leading-8 text-gray-500 mb-4 " data-aos="fade-up">
-              We exclusively welcome the most exceptional candidates in Mozisha
+              We carefully identify and nurture the best talent from over 50 african countries.
             </p>
             <div
               data-aos-duration="2000"
@@ -66,8 +65,7 @@ function Hero() {
                 <RxEnter />
               </span>
               <p className="leading-8 text-gray-500 mb-4" data-aos="fade-up">
-                Furthermore, we tailor each role meticulously according to your
-                specific requirements.{" "}
+               Moreover, we carefully adapt each role to suit your particular requirements.
               </p>
             </div>
             <button
@@ -83,13 +81,13 @@ function Hero() {
             <p
               className="py-2 px-6 bg-purple-300 font-bold rounded-md w-fit"
               data-aos="fade-up">
-              FAST HIRING
+              Scalability 
             </p>
             <p data-aos="fade-up" className="text-2xl mt-4">
               Save over 70%
             </p>
             <p className="leading-8 text-gray-500 mb-4">
-              Using Mozisha compared to entry-level US talent
+            Scale your operations seamlessly . Mozisha offers flexible solutions that adapt to your business needs.
             </p>
             <div
               data-aos-duration="2000"
@@ -117,7 +115,7 @@ function Hero() {
             <p
               data-aos="fade-up"
               className="py-2 px-6 bg-purple-300 font-bold rounded-md w-fit">
-              LOWER COST
+              Cost-Efficiency
             </p>
             <p data-aos="fade-up" className="text-2xl mt-4">
               Hire within days

@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import AOS from "aos";
 import "aos/dist/aos.css";
-import backgroundImg from '../assets/background.jpg'
 import mainimage2 from "/Users/decagon/mozisha2/mozisha-website/src/assets/portrait-two-creative-colleagues-using-laptop-discuss-work-project-office-ai-generated_773922-2249.jpeg";
 import { useEffect } from "react";
 import Hero from "./Hero";
@@ -32,10 +31,7 @@ function Home() {
               Unlocking African Talent for Global Success
             </h1>
             <p className=" mt-8 text-[18px] text-gray-500 md:text-start ">
-              Welcome to Mozisha, a platform where Africa's brightest talents
-              unite to empower global businesses. We specialize in providing
-              efficient outsourcing solutions to elevate your startup's
-              potential.
+            Welcome to Mozisha, Your Gateway to  Premium  Talent to Supercharge Your Business Growth.
             </p>
             <div className="flex flex-col md:flex-row mt-16 gap-4  md:gap-12">
               <button onClick={handleSignUp} className="bg-purple-700 text-white rounded-md md:px-8 md:py-2 py-2 hover:bg-purple-100 hover:text-purple-800 hover:font-bold">

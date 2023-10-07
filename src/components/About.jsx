@@ -1,5 +1,5 @@
-import img from "../assets/4620.jpg";
-import img2 from "../assets/girl.jpg";
+import img from "../assets/afr.avif";
+import img2 from "../assets/9870.jpg";
 import img3 from "../assets/pexels.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -9,30 +9,29 @@ function About() {useEffect(() => {
   AOS.refresh();
 }, []);
   return (
-    <div  data-aos-duration="1000"
-          data-aos="fade-down"  className="md:p-20 p-8">
-      <h1 data-aos-duration="1000"
-          data-aos="fade-up" className="text-4xl font-bold text-center">Our Mission</h1>
-      <p data-aos-duration="1000"
-          data-aos="fade-down" className="md:px-8 leading-8 py-8">
+    <div  data-aos-duration="2000"
+          data-aos="fade-up"  className="md:p-20 p-8">
+      <h1 data-aos-duration="2000"
+          data-aos="fade-right" className="text-4xl font-bold text-center">Our Mission</h1>
+      <p data-aos-duration="2000"
+          data-aos="fade-left" className="md:px-8 leading-8 py-8">
         At Mozisha, our mission is clear: to nurture African talent and connect
         them with businesses worldwide. Through these partnerships, we aim to
         help companies scale efficiently while creating opportunities for our
         talented workforce.
       </p>
 
-      <div  data-aos-duration="1000"
-          data-aos="fade-down"  className="flex flex-col md:flex-row gap-4 md:gap-24 my-24 "  data-aos-duration="2000"
-          data-aos="fade-down" >
-        <div  data-aos-duration="1000"
-          data-aos="fade-down"  className="md:w-1/2 ">
+      <div  data-aos-duration="2000"
+          data-aos="fade-right"  className="flex flex-col md:flex-row gap-4 md:gap-24 my-24 "  >
+        <div  data-aos-duration="2000"
+          data-aos="fade-left"  className="md:w-1/2 ">
           <img src={img} alt="" className="rounded-md "/>
         </div>
-        <div  data-aos-duration="1000"
-          data-aos="fade-down"  className="md:w-1/2 leading-8">
+        <div  data-aos-duration="2000"
+          data-aos="fade-right"  className="md:w-1/2 leading-8">
           <h1 className="text-center py-8 font-bold text-2xl">WHO WE ARE</h1>
-          <p  data-aos-duration="1000"
-          data-aos="fade-down" >
+          <p  data-aos-duration="2000"
+          data-aos="fade-left" >
             We pride ourselves in the rich diversity of our talents. Mozishans
             cut across 54 countries, 3000 ethnic groups, and over 2100 languages
             in Africa. We also ensure that 55% of all our talents are women. By
@@ -41,14 +40,14 @@ function About() {useEffect(() => {
           </p>
         </div>
       </div>
-      <div  data-aos-duration="1000"
-          data-aos="fade-down"  className="flex flex-col md:flex-row-reverse pt-20 gap-4 md:gap-24 my-24">
-        <div  data-aos-duration="1000"
-          data-aos="fade-down"  className="md:w-1/2 ">
+      <div  data-aos-duration="2000"
+          data-aos="fade-right"  className="flex flex-col md:flex-row-reverse pt-20 gap-4 md:gap-24 my-24">
+        <div  data-aos-duration="2000"
+          data-aos="fade-up"  className="md:w-1/2 ">
           <img src={img2} alt="" className="rounded-md"/>
         </div>
-        <div  data-aos-duration="1000"
-          data-aos="fade-down"  className="md:w-1/2 leading-8">
+        <div  data-aos-duration="2000"
+          data-aos="fade-left"  className="md:w-1/2 leading-8">
           <h1 className="text-center py-8 font-bold text-2xl">Unique Training Model
 </h1>
           <p>
@@ -56,14 +55,14 @@ function About() {useEffect(() => {
           </p>
         </div>
       </div>
-      <div  data-aos-duration="1000"
-          data-aos="fade-down"  className="flex flex-col md:flex-row pt-20 gap-4 md:gap-24 my-24">
-        <div  data-aos-duration="1000"
-          data-aos="fade-down"  className="md:w-1/2 ">
+      <div  data-aos-duration="2000"
+          data-aos="fade-up"  className="flex flex-col md:flex-row pt-20 gap-4 md:gap-24 my-24">
+        <div  data-aos-duration="2000"
+          data-aos="fade-right"  className="md:w-1/2 ">
           <img src={img3} alt="" className="rounded-md"/>
         </div>
-        <div  data-aos-duration="1000"
-          data-aos="fade-down"  className="md:w-1/2 leading-8">
+        <div  data-aos-duration="2000"
+          data-aos="fade-up"  className="md:w-1/2 leading-8">
           <h1 className="text-center py-8 font-bold text-2xl">A Footprint in Africa. 
 </h1>
           <p>

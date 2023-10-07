@@ -25,7 +25,7 @@ function Footer() {
 
       <div data-aos-duration="1000" data-aos="fade-up" >
         <h6 data-aos-duration="1000" data-aos="fade-up"  className="font-semibold text-3xl pt-8">Contact Us</h6>
-        <span data-aos-duration="2000" data-aos="fade-up" >Mozisha@gmail.com</span>{" "}
+        <span data-aos-duration="2000" data-aos="fade-up" >info@mozisha.com</span>{" "}
         <div className="text-3xl flex gap-4 mt-36">
        <a href="https://www.instagram.com/mozishaorg/" target="_blank"><FaInstagram  data-aos="zoom-in" className="hover:text-purple-500"/></a> 
        <a href="https://web.facebook.com/mozishaafrica/?_rdc=1&_rdr" target="_blank"><FaFacebook  data-aos="zoom-in" className="hover:text-purple-500"/></a> 

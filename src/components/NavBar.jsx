@@ -106,6 +106,9 @@ function NavBar() {
             <li className="px-4 py-4">
               <Link to="about">About Us</Link>
             </li>
+            <li className="px-4 py-4">
+              <Link to="about">Blog</Link>
+            </li>
             <li onClick={handleSignUp} className="bg-purple-700 hover:bg-purple-100 hover:text-purple-800 text-white rounded-md   px-4 py-4">
               <Link>For Talents</Link>
             </li>
