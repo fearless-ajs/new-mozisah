@@ -18,6 +18,7 @@ import Footer from "./components/Footer";
 import TalentLogin from "./components/TalentLogin";
 import TalentSignUp from "./components/TalentSignUp";
 import Dashboard from "./components/Dashboard";
+import WorkInProgress from "./components/WorkInProgress";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
             <Route path="/login" element={<TalentLogin/>} />
             <Route path="/signup" element={<TalentSignUp />} />
             <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/workinprogress" element={<WorkInProgress />} />
           </Route>
           <Route path="*" element={<ErrorPage />} />
         </Routes>

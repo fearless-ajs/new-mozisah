@@ -9,7 +9,7 @@ function HowItWorks() {
     AOS.refresh();
   }, []);
   return (
-    <div className="bg-purple-50 px-8 md:px-36 py-16 ">
+    <div className="bg-purple-50 px-8 lg:px-36 py-16 ">
       <h2 className="text-4xl my-4 font-semibold" data-aos-duration="2000" data-aos="fade-up">How It Works</h2>
       <p className="max-w-[400px] leading-8" data-aos-duration="2000" data-aos="fade-up">
         When you collaborate with Mozisha, you won't need to review resumes or
@@ -20,7 +20,7 @@ function HowItWorks() {
         <div
           data-aos-duration="2000"
           data-aos="fade-up"
-          className="flex flex-col md:grid md:grid-cols-3 md:flex-row gap-16 mt-8">
+          className="flex flex-col md:grid lg:grid-cols-3 md:flex-row gap-16 mt-8">
           <div data-aos-duration="2000" data-aos="fade-up ">
             <span
               data-aos="fade-zoom-in"

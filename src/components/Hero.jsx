@@ -43,7 +43,7 @@ function Hero() {
         </div>
         <div
           data-aos-duration="2000"
-          className="flex max-w-[1240px] items-center justify-center gap-12 md:flex-row flex-col mt-12 mx-auto px-6 md:px-0"
+          className="flex max-w-[1240px] items-center justify-center gap-12 lg:flex-row flex-col mt-12 mx-auto px-6 md:px-0"
           data-aos="fade-up">
           <div
             data-aos-duration="2000"
@@ -222,7 +222,7 @@ function Hero() {
                 data-aos="zoom-in"
                 src={GroupImg}
                 alt=""
-                className="h-full w-screen object-cover"
+                className="h-full w-screen object-cover md:hidden lg:block"
               />
             </div>
           </div>
@@ -263,7 +263,7 @@ function Hero() {
         <div
           data-aos-duration="2000"
           data-aos="fade-up"
-          className="md:flex md:flex-row gap-36 md:px-36 my-36">
+          className="md:flex md:flex-row gap-36 md:px-8  items-center lg:px-36 my-36 md:gap-8">
           <div data-aos-duration="2000" data-aos="fade-up">
             <img
               data-aos-duration="2000"
@@ -303,7 +303,7 @@ function Hero() {
         <div
           data-aos-duration="2000"
           data-aos="fade-up"
-          className="md:flex md:flex-row gap-36 md:px-36 my-36">
+          className="md:flex md:flex-row gap-36 md:px-8  items-center lg:px-36 my-36 md:gap-8">
           <div data-aos-duration="2000" data-aos="fade-up">
             <img
               data-aos-duration="2000"
@@ -348,7 +348,7 @@ function Hero() {
         <div
           data-aos-duration="2000"
           data-aos="fade-up"
-          className="md:flex md:flex-row gap-36 md:px-36 my-36">
+          className="md:flex md:flex-row md:gap-8 gap-36 md:px-8  items-center lg:px-36 my-36">
           <div data-aos-duration="2000" data-aos="fade-up">
             <img
               data-aos-duration="2000"
@@ -388,7 +388,7 @@ function Hero() {
         <div
           data-aos-duration="2000"
           data-aos="fade-up"
-          className="md:flex md:flex-row gap-36 md:px-36 my-36">
+          className="md:flex md:flex-row gap-36 md:gap-8 items-center my-36 md:px-8 ">
           <div data-aos-duration="2000" data-aos="fade-up">
             <img
               data-aos-duration="2000"

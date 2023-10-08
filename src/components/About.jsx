@@ -22,7 +22,7 @@ function About() {useEffect(() => {
       </p>
 
       <div  data-aos-duration="2000"
-          data-aos="fade-right"  className="flex flex-col md:flex-row gap-4 md:gap-24 my-24 "  >
+          data-aos="fade-right"  className="flex flex-col md:flex-row gap-4 md:gap-24 my-24 items-center"  >
         <div  data-aos-duration="2000"
           data-aos="fade-left"  className="md:w-1/2 ">
           <img src={img} alt="" className="rounded-md "/>
@@ -41,7 +41,7 @@ function About() {useEffect(() => {
         </div>
       </div>
       <div  data-aos-duration="2000"
-          data-aos="fade-right"  className="flex flex-col md:flex-row-reverse pt-20 gap-4 md:gap-24 my-24">
+          data-aos="fade-right"  className="flex items-center flex-col md:flex-row-reverse pt-20 gap-4 md:gap-24 my-24">
         <div  data-aos-duration="2000"
           data-aos="fade-up"  className="md:w-1/2 ">
           <img src={img2} alt="" className="rounded-md"/>
@@ -56,7 +56,7 @@ function About() {useEffect(() => {
         </div>
       </div>
       <div  data-aos-duration="2000"
-          data-aos="fade-up"  className="flex flex-col md:flex-row pt-20 gap-4 md:gap-24 my-24">
+          data-aos="fade-up"  className="flex flex-col items-center md:flex-row pt-20 gap-4 md:gap-24 my-24">
         <div  data-aos-duration="2000"
           data-aos="fade-right"  className="md:w-1/2 ">
           <img src={img3} alt="" className="rounded-md"/>
