@@ -73,7 +73,7 @@ function Home() {
           </div>
         </div>
         <p className="mx-auto max-w-[1240px] text-gray-500 ml-28 mb-8 md:my-8">
-          Mozisha, Your Growth Partner.{" "}
+        {/* Join other VC backed start-ups  to experience exponential growth. */}
         </p>
       </div>
       <Hero />

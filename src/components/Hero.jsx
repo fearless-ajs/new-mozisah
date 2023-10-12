@@ -29,8 +29,7 @@ function Hero() {
         data-aos="fade-up"
         className=" bg-purple-200 ">
         <h2 className="font-bold text-center text-3xl pt-24 md:text-4xl mb-12">
-          The support your team needs to unlock Growth
-        </h2>
+Mozisha, Your Growth Partner      </h2>
         <div
           data-aos-duration="2000"
           className="md:w-[600px] mx-auto "
@@ -38,7 +37,7 @@ function Hero() {
           <p
             className="text-center text-gray-500 px-4  leading-8"
             data-aos="fade-up">
-            Join other VC backed start-ups and agencies to experience exponential growth.
+Join other VC backed start-ups and agencies to experience exponential growth.
           </p>
         </div>
         <div
@@ -49,7 +48,7 @@ function Hero() {
             data-aos-duration="2000"
             className="bg-white  shadow-xl p-8 rounded-md w-full">
             <p className="py-2 px-6 bg-purple-300 font-bold rounded-md w-fit">
-              PREMIUM TALENT
+              Premium Talent
             </p>
             <p className="text-2xl mt-4" data-aos="fade-up">
               Top 1%
@@ -84,10 +83,10 @@ function Hero() {
               Scalability 
             </p>
             <p data-aos="fade-up" className="text-2xl mt-4">
-              Save over 70%
+            Seamlessly Scale Up or Down
             </p>
             <p className="leading-8 text-gray-500 mb-4">
-            Scale your operations seamlessly . Mozisha offers flexible solutions that adapt to your business needs.
+            Whether you need one or multiple talents, Mozisha streamlines the process, allowing you to scale your team up or down within 2 days.
             </p>
             <div
               data-aos-duration="2000"
@@ -99,8 +98,7 @@ function Hero() {
                 <RxEnter />
               </span>
               <p data-aos="fade-up" className="leading-8 text-gray-500 mb-4">
-                Simple pricing: most roles are just $3,000 per month
-              </p>
+              Our smooth onboarding process keeps your operations agile and flexible.              </p>
             </div>
             <button
               data-aos="fade-up"
@@ -118,11 +116,9 @@ function Hero() {
               Cost-Efficiency
             </p>
             <p data-aos="fade-up" className="text-2xl mt-4">
-              Hire within days
-            </p>
+Unbeatable Value            </p>
             <p data-aos="fade-up" className="leading-8 text-gray-500 mb-4">
-              We will identify and position your dedicated assistant within
-              approximately two weeks.
+            Access top-tier talent at a remarkably competitive rate. 
             </p>
             <div
               data-aos-duration="2000"
@@ -132,9 +128,7 @@ function Hero() {
                 <RxEnter />
               </span>
               <p data-aos="fade-up" className="leading-8 text-gray-500 mb-4">
-                All of the sourcing, interviewing and vetting process is done
-                for you
-              </p>
+              Enjoy the best while we handle all payroll obligations              </p>
             </div>
             <button
               data-aos="fade-up"

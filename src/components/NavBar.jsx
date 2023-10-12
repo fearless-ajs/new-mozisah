@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import img from "../assets/logo.png";
+import img from "../assets/mozishalogo.jpg";
 import { useState, useEffect } from "react";
 import { FcMenu } from "react-icons/fc";
 import { LiaTimesSolid } from "react-icons/lia";
@@ -57,18 +57,16 @@ function NavBar() {
               <li onClick={closeMenu}>
                 <Link to="about">About Us</Link>
               </li>
-              {/* <button onClick={handleSignUp} >
-                <li
-                  onClick={closeMenu}
-                  className="bg-purple-700 text-white rounded-md hover:bg-purple-100 hover:text-purple-800  px-8 my-4">
-                  <Link>For Talents</Link>
-                </li>
-              </button> */}
-              {/* <li
-                onClick={closeMenu}
-                className="bg-purple-700 text-white rounded-md hover:bg-purple-100 hover:text-purple-800  px-4">
-                <Link>For Businesses</Link>
-              </li> */}
+             
+            <li onClick={closeMenu} className="px-4 ">
+              <Link to="about">Blog</Link>
+            </li>
+            <li onClick={closeMenu} className="px-4 ">
+              <Link to="workinprogress"> Talents</Link>
+            </li>
+            <li onClick={closeMenu} className="px-4 ">
+              <Link to="business"> Businesses</Link>
+            </li>
             </ul>
           </nav>
           <div>
@@ -91,23 +89,29 @@ function NavBar() {
       {/* ********************************************* DESKTOP VERSION *******************************************/}
 
       <div
-        className={`md:flex hidden justify-between items-center  mx-auto  ${navbarClass} px-16 bg-white z-30`}>
+        className={`md:flex hidden justify-between items-center  mx-auto   ${navbarClass} px-24 bg-white z-30`}>
         <div>
           <img src={img} alt="logo" className="w-48" />
         </div>
         <div>
-          <ul className="flex justify-between gap-8  font-bold">
+          <ul className="flex justify-between gap-8 font-extrabold font-bold">
             <li className="px-4 py-4">
               <Link onClick={navigateToHome} to="/">
                 Home
               </Link>
             </li>
 
-            <li className="px-4 py-4">
+            <li className="px-4 py-4 ">
               <Link to="about">About Us</Link>
             </li>
             <li className="px-4 py-4">
               <Link to="about">Blog</Link>
+            </li>
+            <li className="px-4 py-4">
+              <Link to="workinprogress"> Talents</Link>
+            </li>
+            <li className="px-4 py-4">
+              <Link to="business"> Businesses</Link>
             </li>
            
           </ul>

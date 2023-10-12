@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-no-target-blank */
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaWhatsapp } from "react-icons/fa";
-import img from "../assets/logo.png";
+import img from "../assets/mozisha.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";

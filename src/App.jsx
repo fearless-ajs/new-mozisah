@@ -19,6 +19,9 @@ import TalentLogin from "./components/TalentLogin";
 import TalentSignUp from "./components/TalentSignUp";
 import Dashboard from "./components/Dashboard";
 import WorkInProgress from "./components/WorkInProgress";
+import Business from "./components/Business";
+import SuccessPage from "./components/SuccessPage";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   return (
@@ -31,15 +34,18 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/hero" element={<Hero />} />
             <Route path="/testimonials" element={<Testimonial />} />
-            <Route path="/login" element={<TalentLogin/>} />
+            <Route path="/login" element={<TalentLogin />} />
             <Route path="/signup" element={<TalentSignUp />} />
+            <Route path="/business" element={<Business />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/workinprogress" element={<WorkInProgress />} />
+            <Route path="/success" element={<SuccessPage/>} />
           </Route>
           <Route path="*" element={<ErrorPage />} />
         </Routes>
         <Footer />
-      </Router>
+      </Router>        <ToastContainer />
+
     </div>
   );
 }
