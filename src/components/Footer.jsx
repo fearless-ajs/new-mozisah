@@ -1,9 +1,10 @@
 /* eslint-disable react/jsx-no-target-blank */
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaWhatsapp } from "react-icons/fa";
-import img from "../assets/mozisha.png";
+import img from "../assets/mozishawhite.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 function Footer() {
   useEffect(() => {
     AOS.init();
@@ -16,8 +17,12 @@ function Footer() {
       </div>{" "}
       <div data-aos-duration="1000" data-aos="fade-up">
         <h6 className="font-semibold text-3xl pt-8">About Mozisha</h6>
-        <p>Why Mozisha</p>
-        <p>Roles and Pricing</p>
+        <p className="">
+              <Link to="workinprogress"> Talents</Link>
+            </p>
+            <p className="">
+              <Link to="business"> Businesses</Link>
+            </p>
         <p>Careers</p>
         <p className="mt-8">Terms of Use</p>
         <p>Privacy Policy</p>

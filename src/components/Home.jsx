@@ -7,20 +7,15 @@ import Hero from "./Hero";
 import HowItWorks from "./HowItWorks";
 import Testimonial from "./Testimonial";
 import FrequentlyAskedQuestions from "./FrequentlyAskedQuestions";
-import { useNavigate } from "react-router-dom";
+import { Link, } from "react-router-dom";
 import Video from "./Video";
 function Home() {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
   }, []);
-  const navigate = useNavigate();
-  const wip = () => {
-    navigate("/workinprogress");
-  };
-  const handleSignUp = () => {
-    navigate("/signup");
-  };
+ 
+  
   return (
     <>
       <div>
@@ -41,7 +36,7 @@ function Home() {
              
               <div>
                 <button className="bg-purple-700 text-white rounded-md md:px-4 md:py-2 py-2 hover:bg-purple-100 mb-4 hover:text-purple-800 hover:font-bold w-full">
-                  For Businesses
+                <Link to="business"> For Businesses</Link>
                 </button>
                 <p className="text-sm text-center mb-16">Boost your Business with Top Talents</p>
               </div>

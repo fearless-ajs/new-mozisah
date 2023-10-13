@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { useNavigate } from "react-router-dom";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const BusinessForm = () => {
@@ -112,16 +112,19 @@ const BusinessForm = () => {
 
   return (
     <div className="mt-4 md:mt-8 h-screen">
-      <h2 className="font-bold text-2xl text-center my-8">
-        Talent Request Form
+      <h2  data-aos-duration="2000"
+              data-aos="fade-up" className="font-bold text-2xl text-center my-8">
+        Needs Assessment Form
       </h2>
       <form className="leading-10 h-full md:px-16">
         {formValid === false && (
           <p className="text-red-500">Please fill in all required fields.</p>
         )}
         <div>
-          <label className="font-bold mr-8">Name:</label>
-          <input
+          <label  data-aos-duration="2000"
+              data-aos="fade-up" className="font-bold mr-8">Name:</label>
+          <input  data-aos-duration="2000"
+              data-aos="fade-up" 
             className="border w-full px-4"
             type="text"
             name="name"
@@ -132,8 +135,10 @@ const BusinessForm = () => {
           />
         </div>
         <div className="mt-4 md:mt-8">
-          <label className="font-bold mr-8">Company Name:</label>
-          <input
+          <label  data-aos-duration="2000"
+              data-aos="fade-up" className="font-bold mr-8">Company Name:</label>
+          <input  data-aos-duration="2000"
+              data-aos="fade-up"
             className="border w-full px-4"
             type="text"
             name="companyName"
@@ -144,8 +149,10 @@ const BusinessForm = () => {
           />
         </div>
         <div className="mt-4 md:mt-8">
-          <label className="font-bold mr-8">Email:</label>
-          <input
+          <label  data-aos-duration="2000"
+              data-aos="fade-up" className="font-bold mr-8">Email:</label>
+          <input  data-aos-duration="2000"
+              data-aos="fade-up"
             className="border w-full px-4"
             type="email"
             name="email"
@@ -156,7 +163,8 @@ const BusinessForm = () => {
           />
         </div>
         <div className="mt-4 md:mt-8">
-          <label className="          font-bold mr-8 w-full">Talent Requirements:</label>
+          <label  data-aos-duration="2000"
+              data-aos="fade-up" className="          font-bold mr-8 w-full">Talent Requirements:</label>
           <select
             className="border py-4 px-4 w-full"
             name="talentRequirements"
@@ -173,7 +181,8 @@ const BusinessForm = () => {
         </div>
         {formData.talentRequirements === "Others" && (
           <div className="mt-4 md:mt-8">
-            <label className="font-bold mr-8">Other Requirements:</label>
+            <label  data-aos-duration="2000"
+              data-aos="fade-up" className="font-bold mr-8">Other Requirements:</label>
             <textarea
               className="border w-full px-4"
               name="otherRequirements"
@@ -184,8 +193,10 @@ const BusinessForm = () => {
           </div>
         )}
         <div className="mt-4 md:mt-8">
-          <label className="font-bold mr-8">Number of Talents Needed:</label>
-          <input
+          <label  data-aos-duration="2000"
+              data-aos="fade-up" className="font-bold mr-8">Number of Talents Needed:</label>
+          <input  data-aos-duration="2000"
+              data-aos="fade-up"
             className="border pl-4"
             type="number"
             name="numberOfTalents"
@@ -197,7 +208,8 @@ const BusinessForm = () => {
           />
         </div>
         <div className="mt-4 md:mt-8">
-          <label className="font-bold mr-8">
+          <label  data-aos-duration="2000"
+              data-aos="fade-up" className="font-bold mr-8">
             Preferred Start Date for Talents:
           </label>
           <DatePicker

@@ -1,4 +1,4 @@
-import img2 from "../assets/9870.jpg";
+import img2 from "../assets/group3.jpg";
 import img3 from "../assets/pexels.jpg";
 import img4 from "../assets/united.jpeg";
 import AOS from "aos";
@@ -18,8 +18,7 @@ function About() {useEffect(() => {
           data-aos="fade-left" className="md:px-8 leading-8 py-8">
         At Mozisha, our mission is clear: to nurture premium African talent and connect
         them with businesses worldwide. Through these partnerships, we aim to
-        help companies scale efficiently while creating opportunities for our
-        talented workforce.We provide top-notch outsourcing solutions to propel your business growth.
+        help companies scale efficiently while creating employment opportunities for the African youth. We provide top-notch outsourcing solutions for business growth.
       </p>
 
       <div  data-aos-duration="2000"
@@ -34,7 +33,7 @@ function About() {useEffect(() => {
           <p  data-aos-duration="2000"
           data-aos="fade-left" >
             We pride ourselves in the rich diversity of our talents. Mozishans
-            come from over countries, 3000 ethnic groups, and  2100 languages
+            come from over 50 countries, 3000 ethnic groups, and  2100 languages
             in Africa. We also ensure that at least 50% of all our talents are women. By
             partnering with Mozisha, you are sure to significantly enhance
             diversity, equity and inclusion in your organization

@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
-import welcome from "../assets/welcome.jpeg";
+import welcome from "../assets/handshake.webp";
 const SuccessPage = () => {
   
   return (
     <>
-      <div className="bg-green-50 h-screen my-20 md:px-28 flex flex-col gap-8 ">
+      <div className="bg-green-50  my-20 md:px-28 flex flex-col gap-8 ">
         <div>
 
       <h2 className="text-center text-3xl font-bold text-green-500 py-16">

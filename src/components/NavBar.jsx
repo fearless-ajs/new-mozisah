@@ -9,9 +9,7 @@ function NavBar() {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
-  const handleSignUp = () => {
-    navigate('/signup');
-  };
+ 
   const closeMenu = () => {
     setMenuOpen(false);
   };

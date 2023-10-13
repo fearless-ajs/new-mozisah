@@ -4,17 +4,13 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 // import African from "../assets/African.jpg";
 import GroupImg from "../assets/group.jpg";
-import group1 from "../assets/group.webp";
-import group3 from "../assets/group3.jpg";
-import workers1 from "../assets/workers1.jpg";
-import { HiOutlineUserGroup } from "react-icons/hi";
+
 import {
   AiOutlineFieldTime,
-  AiOutlineTeam,
-  AiTwotoneApi,
+  
 } from "react-icons/ai";
 import { GiWireframeGlobe } from "react-icons/gi";
-import { MdSchool, MdWavingHand } from "react-icons/md";
+import { MdWavingHand } from "react-icons/md";
 import { FaRegHandshake } from "react-icons/fa";
 import { useEffect } from "react";
 function Hero() {
@@ -37,7 +33,7 @@ Mozisha, Your Growth Partner      </h2>
           <p
             className="text-center text-gray-500 px-4  leading-8"
             data-aos="fade-up">
-Join other VC backed start-ups and agencies to experience exponential growth.
+Join other VC-backed companies  to experience exponential growth.
           </p>
         </div>
         <div
@@ -83,10 +79,10 @@ Join other VC backed start-ups and agencies to experience exponential growth.
               Scalability 
             </p>
             <p data-aos="fade-up" className="text-2xl mt-4">
-            Seamlessly Scale Up or Down
+            Seamlessly Scale Your Team
             </p>
             <p className="leading-8 text-gray-500 mb-4">
-            Whether you need one or multiple talents, Mozisha streamlines the process, allowing you to scale your team up or down within 2 days.
+            Whether you need one or multiple talents, Mozisha streamlines the process, allowing you to scale your team within a few days.
             </p>
             <div
               data-aos-duration="2000"
@@ -150,7 +146,7 @@ Unbeatable Value            </p>
               data-aos="fade-up"
               className="mx-auto px-4">
               <h3 className="text-start mb-6 text-3xl md:text-4xl">
-                The Secret to Success? Our "integrate" model.
+                Mozisha's Secret to Success is the "Integrate" Model.
               </h3>
               <p>
                 We don't just offer talent; we seamlessly integrate a new team
@@ -164,23 +160,23 @@ Unbeatable Value            </p>
                   <span className="text-purple-600 text-6xl ">
                     <AiOutlineFieldTime />
                   </span>
-                  <p className=" text-2xl my-2 ">As a “normal” team member</p>
+                  <p className=" text-2xl my-2 ">Seamlessly integrates with your team</p>
                   <p className="text-gray-500 leading-8">
-                  Grant them access to your company email, Slack, Zoom, and other relevant tools. Also, remember to include them in your virtual team gatherings!
+                  Grant them access to your company email, Slack, Zoom, and other relevant tools. Also, remember to include them in your virtual team meetings!
                   </p>
                 </div>
                 <div data-aos-duration="2000" data-aos="fade-up">
                   <span className="text-purple-600 text-6xl ">
                     <GiWireframeGlobe />
                   </span>
-                  <p className=" text-2xl my-2 ">According to your time zone.
+                  <p className=" text-2xl my-2 ">In sync with your time zone.
 
 
 
 
 </p>
                   <p className="text-gray-500 leading-8">
-                  They operate during your standard business hours, regardless of the time zone difference.
+                  Our talents operate during your standard business hours, regardless of the time zone difference.
                   </p>
                 </div>
               </div>
@@ -202,10 +198,10 @@ Unbeatable Value            </p>
                     <FaRegHandshake />
                   </span>
                   <p className=" text-2xl my-2 ">
-                    With plenty of support to get it right
+                  With ample support for success.
                   </p>
                   <p className="text-gray-500 leading-8">
-                  Engaging global talent can seem daunting at first, but we're here to support you continuously, without any restrictions. Our success is intertwined with yours; we only consider it a win when you succeed.
+                  Engaging global talent can seem daunting at first, but we're here to provide you with continuous support.
                   </p>
                 </div>
               </div>
@@ -221,7 +217,7 @@ Unbeatable Value            </p>
             </div>
           </div>
         </div>
-        <div
+        {/* <div
           data-aos-duration="2000"
           data-aos="fade-up"
           className="bg-purple-400 py-16 px-8">
@@ -235,13 +231,13 @@ Unbeatable Value            </p>
             <button className="mt-8 bg-purple-600 py-2 px-10 rounded-md text-purple-200 mx-auto">
             Enroll in the waitlist.            </button>{" "}
           </div>
-        </div>
+        </div> */}
       </div>{" "}
       <div
         data-aos-duration="2000"
         data-aos="fade-up"
         className="bg-purple-50 ">
-        <div
+        {/* <div
           data-aos-duration="2000"
           data-aos="fade-up"
           className="py-16 px-4  leading-8 md:px-10 md:max-w-[1000px] text-start">
@@ -252,9 +248,9 @@ Unbeatable Value            </p>
           Exceptional talents can truly excel when they have the necessary time to dedicate to their tasks. 
             <br /> We alleviate them from routine responsibilities, allowing them to focus more on strategic initiatives and making a significant impact. <br /> Delegate all your manual and repetitive tasks related to campaign management, design, and reporting to our skilled personnel, freeing up valuable time for your team.
           </p>
-        </div>
+        </div> */}
 
-        <div
+        {/* <div
           data-aos-duration="2000"
           data-aos="fade-up"
           className="md:flex md:flex-row gap-36 md:px-8  items-center lg:px-36 my-36 md:gap-8">
@@ -293,8 +289,8 @@ Unbeatable Value            </p>
               Work with the best of the best &rarr;
             </span>
           </div>
-        </div>
-        <div
+        </div> */}
+        {/* <div
           data-aos-duration="2000"
           data-aos="fade-up"
           className="md:flex md:flex-row gap-36 md:px-8  items-center lg:px-36 my-36 md:gap-8">
@@ -338,8 +334,8 @@ Unbeatable Value            </p>
               The perfect candidate for you &rarr;
             </span>
           </div>
-        </div>
-        <div
+        </div> */}
+        {/* <div
           data-aos-duration="2000"
           data-aos="fade-up"
           className="md:flex md:flex-row md:gap-8 gap-36 md:px-8  items-center lg:px-36 my-36">
@@ -418,7 +414,7 @@ Unbeatable Value            </p>
               Scale with Mozisha &rarr;
             </span>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );
