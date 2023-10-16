@@ -27,7 +27,7 @@ function Business() { useEffect(() => {
           Join other VC-backed companies supported by Mozisha. As your trusted
           growth partner, we specialize in providing top-notch operations,
           sales, marketing and customer support talents tailored to your unique
-          needs. Our commitment is to empower your business with  strategic
+          needs. We also provide data and technology talents. Our commitment is to empower your business with  strategic
           resources for accelerated growth.
         </p>
       </div>

@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Swiper, SwiperSlide } from "swiper/react";
 import img from "../assets/christian.jpeg";
-import img2 from "../assets/noel.jpeg";
+import img2 from "../assets/noel1.jpeg";
 import testimoniallogo from "../assets/authentickitchen.png";
 import testimoniallogo2 from "../assets/platinumlogo.png";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
@@ -102,7 +102,7 @@ export default function Testimonial() {
               "Mozisha's team not only understood our educational mission but
               also enhanced it with their strategic insights. With their
               support, we've seen remarkable growth, and our tutors can now
-              focus more on what they do best—educating.
+              focus more on what they do best—educating."
             </p>
             <p
               className="text-sm text-purple-900 mt-8"

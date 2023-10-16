@@ -62,7 +62,7 @@ function Footer() {
             target="_blank">
             <FaLinkedin data-aos="zoom-in" className="hover:text-purple-500" />
           </a>
-          <a href="tel:+27824277902">
+          <a href="https://wa.me/+27824277902" target="_blank">
   <FaWhatsapp data-aos="zoom-in" className="hover:text-purple-500" />
 </a>          <a href="https://twitter.com/MozishaOrg" target="_blank">
             <FaTwitter data-aos="zoom-in" className="hover:text-purple-500" />
