@@ -1,4 +1,4 @@
-import business from "../assets/welcome.avif";
+import business from "../assets/handshake2.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import BusinessForm from "./BusinessForm";
@@ -20,22 +20,21 @@ function Business() { useEffect(() => {
         <img
           src={business}
           alt=""
-          className=" mx-auto rounded-md w-[800px] py-16 shadow-2xl px-4 my-8"
+          className=" mx-auto rounded-md w-[800px] py-16  px-4 my-8"
         />
         <p  data-aos-duration="2000"
               data-aos="fade-up" className="py-4 leading-8 px-4 md:px-16">
           Join other VC-backed companies supported by Mozisha. As your trusted
           growth partner, we specialize in providing top-notch operations,
           sales, marketing and customer support talents tailored to your unique
-          needs. Our commitment is to empower your business with the strategic
-          resources necessary for sustained growth.
+          needs. Our commitment is to empower your business with  strategic
+          resources for accelerated growth.
         </p>
       </div>
 
      
 
-      <div  data-aos-duration="2000"
-              data-aos="fade-up" className="max-w-[1000px] mx-auto px-8 h-full pb-48 shadow-2xl mb-44">
+      <div   className="max-w-[1000px] mx-auto px-8 h-full pb-48 shadow-2xl mb-44">
         <h3 className="text-purple-800 leading-8 text-center  mt-20">
           Fill out the form below and let Mozisha be the driving force behind
           your success.

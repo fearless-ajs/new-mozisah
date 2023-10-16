@@ -79,7 +79,7 @@ export default function FrequentlyAskedQuestions() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography className='  max-w-[1000px]'>
-          Mozisha offers a range of services, including operations, sales, marketing, executive assistant support, customer service, IT and technical support, among others. By partnering with us, you can focus on your core business activities while we handle operational tasks.
+          Using its premium talents, Mozisha offers a range of services, including operations, sales, marketing, executive assistant support, customer service, IT and technical support, among others. By partnering with us, you can focus on your core business activities while we do the heavy lifting.
           </Typography>
         </AccordionDetails>
       </Accordion><Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
@@ -89,7 +89,7 @@ export default function FrequentlyAskedQuestions() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography className='  max-w-[1000px]'>
-          We provide lead generation, digital marketing campaigns (SEO, SEM, social media), content creation, email marketing, sales funnel management, and CRM to enhance your brand's reach.
+          We provide talents with expertise in lead generation, digital marketing campaigns (SEO, SEM, social media), content creation, email marketing, sales funnel management, and CRM to enhance your brand's reach.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -105,7 +105,7 @@ export default function FrequentlyAskedQuestions() {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
+      {/* <Accordion expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
         <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
           <Typography className=' rounded-md text-purple-900 py-4 px-8 w-full'>Does Mozisha offer Data Entry and Management services?
 
@@ -117,7 +117,7 @@ export default function FrequentlyAskedQuestions() {
           Our executive assistants offer top-tier administrative support, including calendar management, travel planning, data entry, and virtual receptionist services, allowing you to focus on your vision.
           </Typography>
         </AccordionDetails>
-      </Accordion>
+      </Accordion> */}
     
       
      

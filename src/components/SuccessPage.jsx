@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
-import welcome from "../assets/handshake.webp";
+import welcome from "../assets/handshake2.jpg";
 const SuccessPage = () => {
   
   return (

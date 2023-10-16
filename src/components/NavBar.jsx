@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import img from "../assets/mozishalogo.jpg";
+import img from "../assets/mozishaweb.svg";
 import { useState, useEffect } from "react";
 import { FcMenu } from "react-icons/fc";
 import { LiaTimesSolid } from "react-icons/lia";
@@ -40,30 +40,30 @@ function NavBar() {
     <>
       <div>
         <header className={`${navbarClass} bg-white z-30`}>
-          <nav className="flex relative md:hidden justify-between  items-center ">
+          <nav className="flex relative md:hidden py-8  mx-4 justify-between items-center ">
             <Link to="/">
-              <img className="w-40 " src={img} alt="" />
+              <img className="w-40 " src={img} alt=""/>
             </Link>
             <ul
-              className={`h-screen   top-8 z-20 justify-center items-center absolute bg-white w-full flex flex-col leading-[80px] font-semibold text-xl ${
+              className={`h-screen text-purple-700   top-8 z-20 justify-center items-center absolute bg-white underline cursor-pointer w-full flex flex-col leading-[80px] font-semibold text-xl ${
                 menuOpen ? "block" : "hidden"
               }`}>
-              <li onClick={closeMenu}>
+              <li onClick={closeMenu} className="  cursor-pointer">
                 <Link to="/">Home</Link>
               </li>
 
               <li onClick={closeMenu}>
-                <Link to="about">About Us</Link>
+                <Link to="about" className="  cursor-pointer">About Us</Link>
               </li>
              
-            <li onClick={closeMenu} className="px-4 ">
-              <Link to="about">Blog</Link>
+              <li onClick={closeMenu} className="  cursor-pointer">
+              <Link to="business"> Businesses</Link>
             </li>
-            <li onClick={closeMenu} className="px-4 ">
+            <li onClick={closeMenu} className="  cursor-pointer">
               <Link to="workinprogress"> Talents</Link>
             </li>
-            <li onClick={closeMenu} className="px-4 ">
-              <Link to="business"> Businesses</Link>
+             <li onClick={closeMenu} className="  cursor-pointer">
+              <Link to="workinprogress">Blog</Link>
             </li>
             </ul>
           </nav>
@@ -87,12 +87,12 @@ function NavBar() {
       {/* ********************************************* DESKTOP VERSION *******************************************/}
 
       <div
-        className={`md:flex hidden justify-between items-center  mx-auto   ${navbarClass} px-24 bg-white z-30`}>
+        className={`md:flex hidden justify-between items-center  py-8 mx-auto   ${navbarClass} px-24 bg-white z-30`}>
         <div>
           <img src={img} alt="logo" className="w-48" />
         </div>
         <div>
-          <ul className="flex justify-between gap-8 font-extrabold font-bold">
+          <ul className="flex justify-between gap-8 font-extrabold ">
             <li className="px-4 py-4">
               <Link onClick={navigateToHome} to="/">
                 Home
@@ -101,15 +101,15 @@ function NavBar() {
 
             <li className="px-4 py-4 ">
               <Link to="about">About Us</Link>
+            </li><li className="px-4 py-4">
+              <Link to="business"> Businesses</Link>
             </li>
-            <li className="px-4 py-4">
-              <Link to="about">Blog</Link>
-            </li>
+            
             <li className="px-4 py-4">
               <Link to="workinprogress"> Talents</Link>
             </li>
             <li className="px-4 py-4">
-              <Link to="business"> Businesses</Link>
+              <Link to="workinprogress">Blog</Link>
             </li>
            
           </ul>

@@ -1,21 +1,26 @@
 /* eslint-disable react/no-unescaped-entities */
 import AOS from "aos";
 import "aos/dist/aos.css";
-import mainimage2 from "/Users/decagon/mozisha2/mozisha-website/src/assets/portrait-two-creative-colleagues-using-laptop-discuss-work-project-office-ai-generated_773922-2249.jpeg";
+import mainimage2 from "../assets/group.jpg";
 import { useEffect } from "react";
 import Hero from "./Hero";
 import HowItWorks from "./HowItWorks";
 import Testimonial from "./Testimonial";
 import FrequentlyAskedQuestions from "./FrequentlyAskedQuestions";
-import { Link, } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Video from "./Video";
 function Home() {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
   }, []);
- 
-  
+  const navigate = useNavigate();
+  const wip = () => {
+    navigate("/workinprogress");
+  };
+  const handleSignUp = () => {
+    navigate("/signup");
+  };
   return (
     <>
       <div>
@@ -25,32 +30,33 @@ function Home() {
           className="flex justify-between items-center gap-16 leading-8  max-w-[1240px] mx-auto flex-col lg:flex-row px-4">
           <div data-aos-duration="2000" data-aos="fade-up">
             <h1 className="md:text-6xl text-4xl leading-[60px] font-bold md:leading-[80px] flex items-center justify-center  text-gray-700   md:text-start  ">
-              Unlocking African Talent for Global Success
+              Unlocking African Talents for Global Success
             </h1>
             <p className=" mt-8 text-[18px] text-gray-500 md:text-start ">
-              Welcome to Mozisha, Your Gateway to Premium Talent to Supercharge
-              Your Business Growth.{" "}
+              Welcome to Mozisha, Your Gateway to Premium Talents to Supercharge
+               Business Growth.{" "}
             </p>
             <div className="flex flex-col lg:flex-row mt-16   md:gap-8">
               {" "}
              
               <div>
                 <button className="bg-purple-700 text-white rounded-md md:px-4 md:py-2 py-2 hover:bg-purple-100 mb-4 hover:text-purple-800 hover:font-bold w-full">
-                <Link to="business"> For Businesses</Link>
+                  <Link to={'/business'}> For Businesses</Link>
+                 
                 </button>
                 <p className="text-sm text-center mb-16">Boost your Business with Top Talents</p>
               </div>
               <div>
                 <button className="bg-purple-700 text-white rounded-md md:px-4 md:py-2 py-2 hover:bg-purple-100 mb-4 hover:text-purple-800 hover:font-bold w-full">
-                  For Talents
-                </button>
+<Link to={'/workinprogress'}>For Talents</Link>                </button>
                 <p className="text-sm text-center mb-16">Access In-Demand Skills and Jobs</p>
               </div>
               <div>
                 <button className="bg-purple-700 text-white rounded-md md:px-4 md:py-2 py-2 hover:bg-purple-100 mb-4 hover:text-purple-800 hover:font-bold md:w-full justify-center items-center w-full">
-                  For Mentors
+                <Link to={'/workinprogress'}> For Mentors</Link>
+
                 </button>
-                <p className="text-sm text-center mb-16">Guide Emerging Talent to Success</p> 
+                <p className="text-sm text-center mb-16">Guide Emerging Talents to Success</p> 
               </div>
             </div>
           </div>
@@ -63,7 +69,7 @@ function Home() {
               data-aos="zoom-in"
               src={mainimage2}
               alt="main photo"
-              className="rounded-lg h-[400px] md:h-full md:px-0  object-cover px-6"
+              className="rounded-lg h-[400px] md:h-full    object-cover "
             />
           </div>
         </div>

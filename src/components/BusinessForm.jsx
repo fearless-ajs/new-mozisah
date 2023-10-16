@@ -1,5 +1,7 @@
-import  { useState } from "react";
+import { useState } from "react";
 import DatePicker from "react-datepicker";
+import { ClipLoader } from "react-spinners";
+
 import "react-datepicker/dist/react-datepicker.css";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
@@ -57,7 +59,8 @@ const BusinessForm = () => {
     // If the form is valid, reset the form validation state
     setFormValid(true);
 
-    const url = "https://mozisha-47b2f-default-rtdb.firebaseio.com/talents.json";
+    const url =
+      "https://mozisha-47b2f-default-rtdb.firebaseio.com/talents.json";
 
     const formDataToSave = {
       name: formData.name,
@@ -65,7 +68,9 @@ const BusinessForm = () => {
       email: formData.email,
       talentRequirements: formData.talentRequirements,
       otherRequirements:
-        formData.talentRequirements === "Others" ? formData.otherRequirements : "",
+        formData.talentRequirements === "Others"
+          ? formData.otherRequirements
+          : "",
       numberOfTalents: formData.numberOfTalents,
       startDate: formData.startDate.toISOString(),
     };
@@ -112,8 +117,9 @@ const BusinessForm = () => {
 
   return (
     <div className="mt-4 md:mt-8 h-screen">
-      <h2  data-aos-duration="2000"
-              data-aos="fade-up" className="font-bold text-2xl text-center my-8">
+      <h2
+        
+        className="font-bold text-2xl text-center my-8">
         Needs Assessment Form
       </h2>
       <form className="leading-10 h-full md:px-16">
@@ -121,10 +127,13 @@ const BusinessForm = () => {
           <p className="text-red-500">Please fill in all required fields.</p>
         )}
         <div>
-          <label  data-aos-duration="2000"
-              data-aos="fade-up" className="font-bold mr-8">Name:</label>
-          <input  data-aos-duration="2000"
-              data-aos="fade-up" 
+          <label
+           
+            className="font-bold mr-8">
+            Name:
+          </label>
+          <input
+          
             className="border w-full px-4"
             type="text"
             name="name"
@@ -135,10 +144,13 @@ const BusinessForm = () => {
           />
         </div>
         <div className="mt-4 md:mt-8">
-          <label  data-aos-duration="2000"
-              data-aos="fade-up" className="font-bold mr-8">Company Name:</label>
-          <input  data-aos-duration="2000"
-              data-aos="fade-up"
+          <label
+          
+            className="font-bold mr-8">
+            Company Name:
+          </label>
+          <input
+            
             className="border w-full px-4"
             type="text"
             name="companyName"
@@ -149,10 +161,13 @@ const BusinessForm = () => {
           />
         </div>
         <div className="mt-4 md:mt-8">
-          <label  data-aos-duration="2000"
-              data-aos="fade-up" className="font-bold mr-8">Email:</label>
-          <input  data-aos-duration="2000"
-              data-aos="fade-up"
+          <label
+           
+            className="font-bold mr-8">
+            Email:
+          </label>
+          <input
+          
             className="border w-full px-4"
             type="email"
             name="email"
@@ -163,14 +178,16 @@ const BusinessForm = () => {
           />
         </div>
         <div className="mt-4 md:mt-8">
-          <label  data-aos-duration="2000"
-              data-aos="fade-up" className="          font-bold mr-8 w-full">Talent Requirements:</label>
+          <label
+            
+            className="          font-bold mr-8 w-full">
+            Talent Requirements:
+          </label>
           <select
             className="border py-4 px-4 w-full"
             name="talentRequirements"
             value={formData.talentRequirements}
-            onChange={handleInputChange}
-          >
+            onChange={handleInputChange}>
             <option value="">Select a talent requirement</option>
             {talentOptions.map((option) => (
               <option key={option} value={option}>
@@ -181,8 +198,12 @@ const BusinessForm = () => {
         </div>
         {formData.talentRequirements === "Others" && (
           <div className="mt-4 md:mt-8">
-            <label  data-aos-duration="2000"
-              data-aos="fade-up" className="font-bold mr-8">Other Requirements:</label>
+            <label
+              data-aos-duration="2000"
+              data-aos="fade-up"
+              className="font-bold mr-8">
+              Other Requirements:
+            </label>
             <textarea
               className="border w-full px-4"
               name="otherRequirements"
@@ -193,10 +214,13 @@ const BusinessForm = () => {
           </div>
         )}
         <div className="mt-4 md:mt-8">
-          <label  data-aos-duration="2000"
-              data-aos="fade-up" className="font-bold mr-8">Number of Talents Needed:</label>
-          <input  data-aos-duration="2000"
-              data-aos="fade-up"
+          <label
+           
+            className="font-bold mr-8">
+            Number of Talents Needed:
+          </label>
+          <input
+            
             className="border pl-4"
             type="number"
             name="numberOfTalents"
@@ -208,8 +232,9 @@ const BusinessForm = () => {
           />
         </div>
         <div className="mt-4 md:mt-8">
-          <label  data-aos-duration="2000"
-              data-aos="fade-up" className="font-bold mr-8">
+          <label
+           
+            className="font-bold mr-8">
             Preferred Start Date for Talents:
           </label>
           <DatePicker
@@ -221,8 +246,7 @@ const BusinessForm = () => {
         <div className="mt-4 md:mt-8 mb-44">
           <button
             onClick={handleSubmit}
-            className="bg-purple-700 text-white rounded-md md:px-4 md:py-2 py-2  hover:bg-purple-100 mb-4 hover:text-purple-800 hover:font-bold md:w-full justify-center items-center w-full"
-          >
+            className="bg-purple-700 text-white rounded-md md:px-4 md:py-2 py-2  hover:bg-purple-100 mb-4 hover:text-purple-800 hover:font-bold md:w-full justify-center items-center w-full">
             Submit
           </button>
         </div>
@@ -232,4 +256,3 @@ const BusinessForm = () => {
 };
 
 export default BusinessForm;
-

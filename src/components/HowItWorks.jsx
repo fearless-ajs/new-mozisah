@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 function HowItWorks() {
   useEffect(() => {
@@ -12,7 +13,7 @@ function HowItWorks() {
     <div className="bg-purple-50 px-8 lg:px-36 py-16 ">
       <h2 className="text-4xl my-4 font-semibold" data-aos-duration="2000" data-aos="fade-up">How It Works</h2>
       <p className="max-w-[400px] leading-8" data-aos-duration="2000" data-aos="fade-up">
-        When you collaborate with Mozisha, you won't need to review resumes or
+        When you partner with Mozisha, you won't need to review resumes or
         take part in any interviews – we completely handle this process for you!
       </p>
 
@@ -28,28 +29,27 @@ function HowItWorks() {
               className="text-9xl text-purple-600 font-extrabold ">
               1
             </span>
-            <h6 className="text-3xl font-semibold my-4">Take the survey</h6>
+            <h6 className="text-3xl font-semibold my-4">Complete the Needs Assessment Form</h6>
             <p className="leading-8">
-            Once you've moved off the waitlist, you'll have a meeting with our team to verify your needs.
-            </p>
+Simply fill out the form with the relevant information            </p>
           </div>
           <div data-aos-duration="2000" data-aos="fade-up">
             <span className="text-9xl text-purple-700 font-extrabold ">2</span>
             <h6 className="text-3xl font-semibold my-4">Recruitment</h6>
             <p className="leading-8">
-            We onboard a dedicated assistant tailored to your specific requirements, including working hours, and this process typically takes around 14 days.
+            We select and onboard your desired talent(s) tailored to your specific requirements, including working hours, and this process typically takes around 7 days.
             </p>
           </div>
           <div data-aos-duration="2000" data-aos="fade-up">
             <span className="text-9xl text-purple-800 font-extrabold ">3</span>
-            <h6 className="text-3xl font-semibold my-4">Meet Your Skilled Personnel</h6>
+            <h6 className="text-3xl font-semibold my-4">Meet Your Talent(s)</h6>
             <p className="leading-8">
-            And let's grow together! Your newly onboarded assistant is seamlessly integrated as a full-time member of your team.
+            And let's grow together! Your newly onboarded talent(s) is seamlessly integrated as a full-time member of your team.
             </p>
           </div>
 
         </div>
-          <button className='mt-8 bg-purple-600 py-2 px-10 rounded-md text-purple-200 mx-auto'>Get Started</button>
+          <button className='mt-8 bg-purple-600 py-2 px-10 rounded-md text-purple-200 mx-auto'><Link to={'/business'}>Get Started</Link></button>
       </div>
     </div>
   );
