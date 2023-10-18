@@ -3,9 +3,12 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import BusinessForm from "./BusinessForm";
 import { useEffect } from "react";
-function Business() { useEffect(() => {
+function Business()
+{
+  useEffect(() => {
   AOS.init();
-  AOS.refresh();
+    AOS.refresh();
+    
 }, []);
   return (
     <div  data-aos-duration="2000"
@@ -27,7 +30,7 @@ function Business() { useEffect(() => {
           Join other VC-backed companies supported by Mozisha. As your trusted
           growth partner, we specialize in providing top-notch operations,
           sales, marketing and customer support talents tailored to your unique
-          needs. We also provide data and technology talents. Our commitment is to empower your business with  strategic
+          needs. We also provide data and technology talents Our commitment is to empower your business with  strategic
           resources for accelerated growth.
         </p>
       </div>

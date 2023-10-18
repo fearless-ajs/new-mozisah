@@ -16,6 +16,9 @@ function Hero() {
     AOS.init();
     AOS.refresh();
   }, []);
+  const handleGetStartedClick = () => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  };
   return (
     <>
       <div
@@ -64,7 +67,7 @@ function Hero() {
                 requirements.
               </p>
             </div>
-            <button
+            <button onClick={handleGetStartedClick}
               className="mt-8 bg-purple-600 py-2 px-10 rounded-md text-purple-200 mx-auto"
               data-aos="fade-up">
              
@@ -102,7 +105,7 @@ function Hero() {
                 flexible.{" "}
               </p>
             </div>
-            <button
+            <button onClick={handleGetStartedClick}
               data-aos="fade-up"
               className="mt-8 bg-purple-600 py-2 px-10 rounded-md text-purple-200 mx-auto">
               <Link to={"/business"}>Get Started</Link>
@@ -134,7 +137,7 @@ function Hero() {
                 Enjoy the best while we handle all payroll obligations{" "}
               </p>
             </div>
-            <button
+            <button onClick={handleGetStartedClick}
               data-aos="fade-up"
               className="mt-8 bg-purple-600 py-2 px-10 rounded-md text-purple-200 mx-auto">
               <Link to={"/business"}>Get Started</Link>{" "}

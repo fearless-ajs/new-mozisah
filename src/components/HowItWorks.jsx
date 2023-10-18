@@ -8,7 +8,9 @@ function HowItWorks() {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
-  }, []);
+  }, []); const handleGetStartedClick = () => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  };
   return (
     <div className="bg-purple-50 px-8 lg:px-36 py-16 ">
       <h2 className="text-4xl my-4 font-semibold" data-aos-duration="2000" data-aos="fade-up">How It Works</h2>
@@ -49,7 +51,8 @@ Simply fill out the form with the relevant information            </p>
           </div>
 
         </div>
-          <button className='mt-8 bg-purple-600 py-2 px-10 rounded-md text-purple-200 mx-auto'><Link to={'/business'}>Get Started</Link></button>
+        <button  onClick={handleGetStartedClick} className='mt-8 bg-purple-600 py-2 px-10 rounded-md text-purple-200 mx-auto'><Link to={'/business#'}>Get Started</Link></button>
+
       </div>
     </div>
   );
