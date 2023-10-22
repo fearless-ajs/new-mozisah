@@ -35,7 +35,9 @@ function Home() {
   const handleSignUp = () => {
     navigate("/signup");
   };
-
+  const handleGetStartedClick = () => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  };
   return (
     <>
       <div>
@@ -55,7 +57,7 @@ function Home() {
               {" "}
               <div>
                 <button className="bg-purple-700 text-white rounded-md md:px-4 md:py-2 py-2 hover:bg-purple-100 mb-4 hover:text-purple-800 hover:font-bold w-full">
-                  <Link to={"/business"}> For Businesses</Link>
+                  <Link to={"/business"} onClick={handleGetStartedClick}> For Businesses</Link>
                 </button>
                 <p className="text-sm text-center mb-16">
                   Boost your Business with Top Talents
@@ -63,7 +65,7 @@ function Home() {
               </div>
               <div>
                 <button className="bg-purple-700 text-white rounded-md md:px-4 md:py-2 py-2 hover:bg-purple-100 mb-4 hover:text-purple-800 hover:font-bold w-full">
-                  <Link to={"/workinprogress"}>For Talents</Link>{" "}
+                  <Link to={"/workinprogress"} onClick={handleGetStartedClick}>For Talents</Link>{" "}
                 </button>
                 <p className="text-sm text-center mb-16">
                   Access In-Demand Skills and Jobs
@@ -71,7 +73,7 @@ function Home() {
               </div>
               <div>
                 <button className="bg-purple-700 text-white rounded-md md:px-4 md:py-2 py-2 hover:bg-purple-100 mb-4 hover:text-purple-800 hover:font-bold md:w-full justify-center items-center w-full">
-                  <Link to={"/workinprogress"}> For Mentors</Link>
+                  <Link to={"/workinprogress"} onClick={handleGetStartedClick}> For Mentors</Link>
                 </button>
                 <p className="text-sm text-center mb-16">
                   Guide Emerging Talents to Success
