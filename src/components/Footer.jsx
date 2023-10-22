@@ -16,6 +16,11 @@ function Footer() {
     AOS.init();
     AOS.refresh();
   }, []);
+
+
+  const handleGetStartedClick = () => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  };
   return (
     <div className="p-8 md:px-28 md:justify-center  flex flex-col md:flex-row bg-purple-700 text-white gap-[5rem] leading-10 md:items-center">
       <div className="md:w-1/2">
@@ -24,26 +29,26 @@ function Footer() {
       <div data-aos-duration="1000" data-aos="fade-up">
         <p className="font-semibold ">
           {" "}
-          <Link to={"/about"}> About Mozisha</Link>
+          <Link to={"/about"} onClick={handleGetStartedClick}> About Mozisha</Link>
         </p>
-        <p className="">
+        <p className="" onClick={handleGetStartedClick}>
           <Link to="business"> Businesses</Link>
         </p>
-        <p className="">
+        <p className="" onClick={handleGetStartedClick}>
           <Link to="workinprogress"> Talents</Link>
         </p>
-        <p className="">
+        <p className="" onClick={handleGetStartedClick}>
           <Link to="workinprogress"> Blog</Link>
         </p>
 
-        <p className="mt-8">Terms of Use</p>
-        <p>Privacy Policy</p>
+        <p className="mt-8" onClick={handleGetStartedClick}>Terms of Use</p>
+        <p onClick={handleGetStartedClick}>Privacy Policy</p>
       </div>
       <div data-aos-duration="1000" data-aos="fade-up">
         <h6
           data-aos-duration="1000"
           data-aos="fade-up"
-          className="font-semibold ">
+          className="font-semibold " onClick={handleGetStartedClick}>
          <a href="tel:+27824277902">Contact Us
 </a>
         </h6>
