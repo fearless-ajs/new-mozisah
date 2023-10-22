@@ -3,43 +3,19 @@ import img3 from "../assets/pexels.jpg";
 import img4 from "../assets/united.jpeg";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Team from "./Team";
-import { FaWhatsapp } from "react-icons/fa";
 function About() {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
   }, []);
 
-  const [isHovered, setIsHovered] = useState(false);
-
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
+  
   return (
-    <div data-aos-duration="2000" data-aos="fade-up" className="md:p-20 p-8"> <div
-    className="fixed top-[80%] md:right-16 right-4 z-40"
-    onMouseEnter={handleMouseEnter}
-    onMouseLeave={handleMouseLeave}>
-    <a href="https://wa.me/+27824277902" target="_blank" rel="noreferrer">
-      <div className="relative">
-        <FaWhatsapp
-          data-aos="zoom-in"
-          className="hover:text-green-500 w-8 h-8 text-green-600 font-extrabold cursor-pointer"
-        />
-        {isHovered && (
-          <div className="absolute text-[10px] text-black mb-4 rounded-md  bottom-full">
-            Contact us now!
-          </div>
-        )}
-      </div>
-    </a>
-  </div>
+    <div data-aos-duration="2000" data-aos="fade-up" className="md:p-20 p-8">
+      {" "}
+      
       <h1
         data-aos-duration="2000"
         data-aos="fade-up"
@@ -60,7 +36,6 @@ function About() {
         Africa. Mozisha provides top-notch outsourcing solutions for business
         growth.
       </p>
-
       <div
         data-aos-duration="2000"
         data-aos="fade-up"
@@ -129,7 +104,6 @@ function About() {
             global labour force.
           </p>
         </div>{" "}
-       
       </div>
       <Team />
     </div>

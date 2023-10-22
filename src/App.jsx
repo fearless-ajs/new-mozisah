@@ -22,8 +22,19 @@ import WorkInProgress from "./components/WorkInProgress";
 import Business from "./components/Business";
 import SuccessPage from "./components/SuccessPage";
 import { ToastContainer } from "react-toastify";
+import { useState } from "react";
+import { FaWhatsapp } from "react-icons/fa";
 
 function App() {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
   return (
     <div>
       <Router>
@@ -45,7 +56,24 @@ function App() {
         </Routes>
         <Footer />
       </Router>        <ToastContainer />
-
+      <div
+        className="fixed top-[80%] md:right-16 right-4 z-40"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}>
+        <a href="https://wa.me/+27824277902" target="_blank" rel="noreferrer">
+          <div className="relative">
+            <FaWhatsapp
+              data-aos="zoom-in"
+              className="hover:text-green-500 w-8 h-8 text-green-600 font-extrabold cursor-pointer"
+            />
+            {isHovered && (
+              <div className="absolute text-[10px] text-black mb-4 rounded-md  bottom-full">
+                Contact us now!
+              </div>
+            )}
+          </div>
+        </a>
+      </div>
     </div>
   );
 }

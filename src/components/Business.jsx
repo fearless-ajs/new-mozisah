@@ -2,43 +2,17 @@ import business from "../assets/handshake2.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import BusinessForm from "./BusinessForm";
-import { useEffect, useState } from "react";
-import { FaWhatsapp } from "react-icons/fa";
+import { useEffect} from "react";
 function Business()
 {
   useEffect(() => {
   AOS.init();
     AOS.refresh();
     
-}, []);  const [isHovered, setIsHovered] = useState(false);
-
-const handleMouseEnter = () => {
-  setIsHovered(true);
-};
-
-const handleMouseLeave = () => {
-  setIsHovered(false);
-};
+}, []);  
   return (
     <div  data-aos-duration="2000"
-              data-aos="fade-up" className=" "> <div
-              className="fixed top-[80%] md:right-16 right-4 z-40"
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}>
-              <a href="https://wa.me/+27824277902" target="_blank" rel="noreferrer">
-                <div className="relative">
-                  <FaWhatsapp
-                    data-aos="zoom-in"
-                    className="hover:text-green-500 w-8 h-8 text-green-600 font-extrabold cursor-pointer"
-                  />
-                  {isHovered && (
-                    <div className="absolute text-[10px] text-black mb-4 rounded-md  bottom-full">
-                      Contact us now!
-                    </div>
-                  )}
-                </div>
-              </a>
-            </div>
+              data-aos="fade-up" className=" "> 
       <h1  data-aos-duration="2000"
               data-aos="fade-up" className="text-center  text-3xl md:text-4xl font-bold">
         Mozisha, Your Growth Partner
