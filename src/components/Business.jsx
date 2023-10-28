@@ -22,7 +22,7 @@ function Business()
               data-aos="fade-up">
         <img
           src={business}
-          alt=""
+          alt="main image"
           className=" mx-auto rounded-md w-[800px] py-16  px-4 my-8"
         />
         <p  data-aos-duration="2000"

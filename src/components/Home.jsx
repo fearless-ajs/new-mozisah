@@ -90,7 +90,7 @@ function Home() {
               data-aos-duration="2000"
               data-aos="zoom-in"
               src={mainimage2}
-              alt="main photo"
+              alt="main"
               className="rounded-lg h-[400px] md:h-full    object-cover "
             />
           </div>
