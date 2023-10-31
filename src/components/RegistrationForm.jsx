@@ -12,6 +12,7 @@ import { SiAltiumdesigner } from "react-icons/si";
 import { BiNetworkChart } from "react-icons/bi";
 import { AiOutlineDatabase } from "react-icons/ai";
 import { SiCoinmarketcap } from "react-icons/si";
+import { Helmet } from "react-helmet";
 
 const RegistrationForm = () => {
   useEffect(() => {
@@ -142,6 +143,14 @@ const RegistrationForm = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Talent</title>
+        <meta
+          name="description"
+          content=" Join as a skilled talent .  "
+        />
+        <link rel="canonical" href="/register" />
+      </Helmet>
       <div data-aos-duration="2000" data-aos="fade-up " className="mb-60">
         <div
           data-aos-duration="2000"

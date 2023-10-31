@@ -13,6 +13,7 @@ import FrequentlyAskedQuestions from "./FrequentlyAskedQuestions";
 import { Link, useNavigate } from "react-router-dom";
 import Video from "./Video";
 import { FaWhatsapp } from "react-icons/fa";
+import { Helmet } from "react-helmet";
 function Home() {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -40,6 +41,14 @@ function Home() {
   };
   return (
     <>
+      <Helmet>
+        <title>Home</title>
+        <meta
+          name="Home"
+          content=" Welcome to Mozisha, Your Gateway to Premium Talents to Supercharge Business Growth.  "
+        />
+        <link rel="canonical" href="/home" />
+      </Helmet>
       <div>
         <div
           data-aos-duration="2000"

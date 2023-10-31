@@ -3,6 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import BusinessForm from "./BusinessForm";
 import { useEffect} from "react";
+import { Helmet } from "react-helmet";
 function Business()
 {
   useEffect(() => {
@@ -11,6 +12,15 @@ function Business()
     
 }, []);  
   return (
+    <>
+       <Helmet>
+        <title>Business</title>
+        <meta
+          name="description"
+          content="Join other VC-backed companies supported by Mozisha.   "
+        />
+        <link rel="canonical" href="/business" />
+      </Helmet>
     <div  data-aos-duration="2000"
               data-aos="fade-up" className=" "> 
       <h1  data-aos-duration="2000"
@@ -46,6 +56,7 @@ function Business()
         <BusinessForm />
       </div>
     </div>
+                </>
   );
 }
 
