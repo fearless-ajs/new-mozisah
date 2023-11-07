@@ -30,7 +30,7 @@ function Team() {
               <img
                 className="rounded-full object-cover mb-8 md:mb-0 max-w-[400px] h-[200px] w-[200px]"
                 src={kene}
-                alt=""
+                alt="Image of Dr Kene, the chief Executive Officer"
               />{" "}
             </div>
             <div data-aos-duration="5000" data-aos="fade-up">
@@ -73,7 +73,7 @@ function Team() {
               <img
                 className="rounded-full object-cover mb-8 md:mb-0 max-w-[400px] h-[200px] w-[200px]"
                 src={iorna}
-                alt=""
+                alt="Image of Lorna,our chief talent officer"
               />{" "}
             </div>
             <div data-aos-duration="2000" data-aos="fade-up">
@@ -118,7 +118,7 @@ function Team() {
               <img
                 className="rounded-full object-cover mb-8 md:mb-0 max-w-[400px] h-[200px] w-[200px]"
                 src={sola}
-                alt=""
+                alt="Image of Sola,our chief operating officer"
               />{" "}
             </div>
             <div data-aos-duration="5000" data-aos="fade-up">

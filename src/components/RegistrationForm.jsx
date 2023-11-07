@@ -185,7 +185,7 @@ const RegistrationForm = () => {
             className="rounded- pb-20">
             <img
               src={img}
-              alt="group photo"
+              alt="a young man working"
               className="max-h-[600px] px-4 md:px-0 md:w-[600px] rounded-lg object-cover mb-16"
             />
           </div>

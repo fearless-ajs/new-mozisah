@@ -13,7 +13,7 @@ const SuccessPage = () => {
       </h2>
         </div>
       <div className="px-4  object-cover max-w-[500px] rounded-lg mb-8 mx-auto">
-        <img src={welcome} alt="welcome" />
+        <img src={welcome} alt="Image of people shaking hands" />
       </div>
       <p className="text-purple-600 text-center  font-extrabold">
         We&apos;ll be in touch within the next six hours.

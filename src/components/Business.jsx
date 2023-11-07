@@ -32,7 +32,7 @@ function Business()
               data-aos="fade-up">
         <img
           src={business}
-          alt="main image"
+          alt="Two people shaking hands"
           className=" mx-auto rounded-md w-[800px] py-16  px-4 my-8"
         />
         <p  data-aos-duration="2000"

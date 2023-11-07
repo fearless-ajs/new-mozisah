@@ -2,7 +2,6 @@
 import { RxEnter } from "react-icons/rx";
 import AOS from "aos";
 import "aos/dist/aos.css";
-// import African from "../assets/African.jpg";
 import GroupImg from "../assets/portrait.jpeg";
 
 import { AiOutlineFieldTime } from "react-icons/ai";
@@ -226,7 +225,7 @@ function Hero() {
                 data-aos-duration="2000"
                 data-aos="zoom-in"
                 src={GroupImg}
-                alt=""
+                alt="An image of a man and a woman sitting together"
                 className="h-full w-screen object-cover md:hidden lg:block"
               />
             </div>

@@ -99,7 +99,7 @@ function Home() {
               data-aos-duration="2000"
               data-aos="zoom-in"
               src={mainimage2}
-              alt="main"
+              alt="main image, showing a diverse group of people smiling. "
               className="rounded-lg h-[400px] md:h-full    object-cover "
             />
           </div>

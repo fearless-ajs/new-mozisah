@@ -1,6 +1,5 @@
 /* eslint-disable react/jsx-no-target-blank */
 import {
-  FaFacebook,
   FaInstagram,
   FaLinkedin,
   FaTwitter,
@@ -24,7 +23,7 @@ function Footer() {
   return (
     <div className="p-8 md:px-28 md:justify-center  flex flex-col md:flex-row bg-purple-700 text-white gap-[5rem] leading-10 md:items-center">
       <div className="md:w-1/2">
-        <img src={img} alt="" />
+        <img src={img} alt="Mozisha website logo" />
       </div>{" "}
       <div data-aos-duration="1000" data-aos="fade-up">
         <p className="font-semibold ">
@@ -57,11 +56,7 @@ function Footer() {
           <a href="https://www.instagram.com/mozishaorg/" target="_blank">
             <FaInstagram data-aos="zoom-in" className="hover:text-purple-500" />
           </a>
-          <a
-            href="https://web.facebook.com/mozishaafrica/?_rdc=1&_rdr"
-            target="_blank">
-            <FaFacebook data-aos="zoom-in" className="hover:text-purple-500" />
-          </a>
+        
           <a
             href="https://www.linkedin.com/company/mozisha/?originalSubdomain=ng"
             target="_blank">

@@ -52,7 +52,7 @@ function About() {
             data-aos-duration="2000"
             data-aos="fade-up"
             className="md:w-1/2 ">
-            <img src={img4} alt="" className="rounded-md " />
+            <img src={img4} alt="people joining hands in solidarity" className="rounded-md " />
           </div>
           <div
             data-aos-duration="2000"
@@ -79,7 +79,7 @@ function About() {
             data-aos-duration="2000"
             data-aos="fade-up"
             className="md:w-1/2 ">
-            <img src={img2} alt="" className="rounded-md" />
+            <img src={img2} alt="young people discussing"  className="rounded-md" />
           </div>
           <div
             data-aos-duration="2000"
@@ -105,7 +105,7 @@ function About() {
             data-aos-duration="2000"
             data-aos="fade-up"
             className="md:w-1/2 ">
-            <img src={img3} alt="" className="rounded-md" />
+            <img src={img3} alt="young boy working" className="rounded-md" />
           </div>
           <div
             data-aos-duration="2000"
