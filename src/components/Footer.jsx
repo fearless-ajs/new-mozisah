@@ -34,10 +34,10 @@ function Footer() {
           <Link to="business"> Businesses</Link>
         </p>
         <p className="" onClick={handleGetStartedClick}>
-          <Link to="workinprogress"> Talents</Link>
+          <Link to="fortalents"> Talents</Link>
         </p>
         <p className="" onClick={handleGetStartedClick}>
-          <Link to="workinprogress"> Blog</Link>
+          <Link to="blog"> Blog</Link>
         </p>
 
         <p className="mt-8" onClick={handleGetStartedClick}>Terms of Use</p>

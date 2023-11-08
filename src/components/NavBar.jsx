@@ -48,7 +48,7 @@ function NavBar() {
         <header className={`${navbarClass} bg-white z-30`}>
           <nav className="flex relative md:hidden py-8  mx-4 justify-between items-center ">
             <Link to="/">
-              <img className="w-40 " src={img} alt="Mozisha Website logo" />
+              <img className="w-40 " src={img} alt="" />
             </Link>
             <ul
               className={`h-screen text-purple-700   top-8 z-20 justify-center items-center absolute bg-white underline cursor-pointer w-full flex flex-col leading-[80px] font-semibold text-xl ${
@@ -97,7 +97,7 @@ function NavBar() {
       <div
         className={`md:flex hidden justify-between items-center  py-8 mx-auto   ${navbarClass} px-24 bg-white z-30`}>
         <div>
-          <img src={img} alt="Mozisha logo" className="w-48" />
+          <img src={img} alt="logo" className="w-48" />
         </div>
         <div>
           <ul className="flex justify-between gap-8 font-extrabold ">
@@ -117,8 +117,8 @@ function NavBar() {
             <li onClick={handleGetStartedClick} className="px-4 py-4">
               <Link to="fortalents"> Talents</Link>
             </li>
-            <li className="px-4 py-4">
-              <Link to="workinprogress">Blog</Link>
+            <li className="px-4 py-4" onClick={handleGetStartedClick}>
+              <Link to="blog">Blog</Link>
             </li>
           </ul>
         </div>
