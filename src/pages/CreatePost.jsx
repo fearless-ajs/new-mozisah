@@ -15,7 +15,6 @@ import {
 } from 'firebase/storage';
 import { useNavigate } from 'react-router-dom';
 import { ClipLoader } from 'react-spinners';
-import { Helmet } from 'react-helmet';
 
 // eslint-disable-next-line react/prop-types
 function CreatePost({ isAuth }) {
@@ -27,14 +26,11 @@ function CreatePost({ isAuth }) {
   const navigate = useNavigate();
   const storage = getStorage();
   const [editorHtml, setEditorHtml] = useState('');
-
-  
   const quillModules = {
     toolbar: [
       [{ 'header': '1' }, { 'header': '2' }, { 'font': [] }],
-      ['bold', 'italic', 'underline','strike','color','background',
-      'script',],
-      ['image', 'link','video'],
+      ['bold', 'italic', 'underline'],
+      ['image', 'link'],
     ],
   };
   
@@ -49,7 +45,9 @@ function CreatePost({ isAuth }) {
   ];
   
   const createPost = async () => {
-    window.scrollTo(0, 0); // Scroll to the top of the page
+    window.scrollTo(0, 0);
+  
+    
   
     if (title.trim() === '' || editorHtml.trim() === '') {
       toast.error('Please provide both a title and post text.');
@@ -58,22 +56,35 @@ function CreatePost({ isAuth }) {
   
     setLoading(true);
   
-    if (image) {
-      const imageRef = ref(storage, 'post-images/' + image.name);
-      await uploadBytes(imageRef, image);
-      const imageUrl = await getDownloadURL(imageRef);
+    console.log('Before adding post to Firestore');
   
-      await addDoc(postsCollectionRef, {
-        title,
-        postText: editorHtml, // Use the content from the Quill editor
-        imageUrl,
-        author: { name: auth.currentUser.displayName, id: auth.currentUser.uid },
-      });
+    try {
+      if (image) {
+        const imageRef = ref(storage, 'post-images/' + image.name);
+        await uploadBytes(imageRef, image);
+        const imageUrl = await getDownloadURL(imageRef);
+  
+        await addDoc(postsCollectionRef, {
+          title,
+          postText: editorHtml,
+          imageUrl,
+          author: { name: auth.currentUser.displayName, id: auth.currentUser.uid },
+        });
+  
+        console.log('Firestore operation successful');
+      } else {
+        await addDoc(postsCollectionRef, {
+          title,
+          postText: editorHtml,
+          author: { name: auth.currentUser.displayName, id: auth.currentUser.uid },
+        });
+  
+        console.log('Firestore operation successful');
+      }
   
       setLoading(false);
       navigate('/blog');
   
-      // Show a success toast notification
       toast.success('Post created successfully', {
         position: 'top-right',
         hideProgressBar: false,
@@ -82,39 +93,16 @@ function CreatePost({ isAuth }) {
         draggable: true,
         progress: undefined,
       });
-    } else {
-      await addDoc(postsCollectionRef, {
-        title,
-        postText: editorHtml, // Use the content from the Quill editor
-        author: { name: auth.currentUser.displayName, id: auth.currentUser.uid },
-      });
-  
+    } catch (error) {
+      console.error('Error in Firestore operation:', error);
       setLoading(false);
-      navigate('/blog');
-  
-      // Show a success toast notification
-      toast.success('Post created successfully', {
-        position: 'top-right',
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-      });
     }
   };
+  
   
 
   return (
     <div>
-      <Helmet>
-        <title>Create a post</title>
-        <meta
-          name="Blogpost"
-          content=" Create a Blog "
-        />
-        <link rel="canonical" href="/createpost" />
-      </Helmet>
       <div className='max-w-5xl mx-auto flex flex-col bg-purple-100 p-8 rounded-lg h-full'>
         <h1 className='md:text-4xl text-2xl font-bold my-4'>Create A Post</h1>
 

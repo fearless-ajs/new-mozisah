@@ -10,7 +10,6 @@ import { auth } from '../firebase/firebase';
 import { db } from '../firebase/firebase';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { Helmet } from 'react-helmet';
 function Homes() {
   const [loadingInProgress, setLoading] = useState(true);
   const [postList, setPostList] = useState([]);
@@ -72,14 +71,6 @@ function Homes() {
 
   return (
     <>
-      <Helmet>
-        <title>Blogs</title>
-        <meta
-          name="Blog Home Page"
-          content=" Welcome to Mozisha's blog section' "
-        />
-        <link rel="canonical" href="/home" />
-      </Helmet>
       <nav className='my-8 justify-end max-w-7xl px-4 flex gap-4'>
         {user ? ( // Check if there is a logged-in user
           <>
